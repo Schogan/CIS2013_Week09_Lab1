@@ -1,15 +1,17 @@
 #include <iostream>
-#include <cstring>
+#include <string>
 using namespace std;
 
 int main(){
-	char name[6] = "Logan";
-	char last[13] = "Schanbacher";
-	char copy[15];
-	
-	strcpy(copy, last);
+	string name = "Logan";
 	
 	
-	cout << "Firstname: " << name << " Lastname: " << copy << endl;
+	cout << "Name: " << name << endl;
+	cout << "The length of your name is: " << name.length() << endl;
+	cout << "The third letter in your name is: " << name[2] << endl;
 	
+	
+	for(int i = 0; i<name.length(); i++){
+		cout << "You spell Logan with a " << name[i] << endl;
+	}
 }
